@@ -10,5 +10,5 @@ RUN apt-get --no-install-recommends -y install \
         cmake \
         cppcheck
 
-ENV CC x86_64-w64-mingw32-gcc
-ENV CXX x86_64-w64-mingw32-g++
+COPY mingw-toolchain.cmake /mingw-toolchain.cmake
+COPY mingw-posix-toolchain.cmake /mingw-posix-toolchain.cmake
